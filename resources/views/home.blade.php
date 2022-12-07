@@ -23,7 +23,7 @@
 
 
   {{-- INSTA SECTION --}}
-
+  <x-insta />
 
   {{-- NEWSLETTER SECTION --}}
   <x-newsletter />
