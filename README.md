@@ -1,64 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Introduction
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a complete project implementation of ecommerce fashion website figma mockup/wireframe. The website is created using the PHP Laravel Framework + Tailwind CSS. The site contain the following features:
 
-## About Laravel
+- Navigation Section
+- Benefits Section
+- Hero Section
+- Site-Wide Deals Section
+- VIP Exclusive Section
+- Trending Section
+- New In Section
+- Recently Bought Section
+- Insta Section
+- Newsletter Section
+- Footer Section
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Installation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+At least Ubuntu 20.04 LTS server environment is required to install the site.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Install NGINX web server.
+```sh
+  sudo apt install nginx
+  sudo systemctl enable nginx
+  sudo systemctl restart nginx
+```
 
-## Learning Laravel
+Install and Setup MariaDB.
+```sh
+  sudo apt install mariadb-server mariadb-client
+  sudo mysql_secure_installation
+  sudo systemctl enable mariadb
+  sudo systemctl restart mariadb
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Install PHP and required libraries.
+```sh
+  sudo apt install php7.4-fpm php7.4-mysql php7.4-cli php7.4-common php7.4-curl php7.4-json php7.4-mbstring php7.4-xml php7.4-pdo-mysql php7.4-tokenizer php7.4-bcmath php7.4-gd
+  sudo systemctl enable php7.4-fpm.service
+  sudo systemctl restart php7.4-fpm.service
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Create Database and Allow Database User.
 
-## Laravel Sponsors
+Connect to mysql root.
+```sh
+  sudo mysql -u root -p
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Execute query commands to create database user.
+```sh
+  CREATE DATABASE db_ecommerce_fashion_site CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+  CREATE USER 'efssql'@'localhost' IDENTIFIED BY "password123!@#";
+  GRANT ALL PRIVILEGES ON db_ecommerce_fashion_site.* TO 'efssql'@'localhost';
+  FLUSH PRIVILEGES;
+  FLUSH HOSTS;
+```
 
-### Premium Partners
+Then exit to the mysql prompt.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Get Composer.
+```sh
+  sudo curl -sS https://getcomposer.org/installer | php
+  sudo mv composer.phar /usr/local/bin/composer
+  sudo chmod +x /usr/local/bin/composer
+```
 
-## Contributing
+Install and Setup Site.
+```sh
+  sudo cd /var/www
+  git clone git@github.com:traci12/Ecommerce_Fashion_Site.git
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Generate a key if required.
+```sh
+  sudo php artisan key:generate
+```
 
-## Code of Conduct
+Setup Virtual Host.
+```sh
+  sudo nano /etc/nginx/sites-available/default
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Paste the following configuration and replace <domain> with your certified domain name.
+```sh
+server {
+    listen 80;
+    server_name <domain>;
+    root /var/www/Ecommerce_Fashion_Site/public;
 
-## Security Vulnerabilities
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    index index.html index.htm index.php;
 
-## License
+    charset utf-8;
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+```
+
+Reload web server.
+```sh
+  sudo systemctl reload nginx
+```
+
+(Optional) Install Certbot and Obtain SSL Certificate. Replace <domain> with your certified domain name.
+```sh
+  sudo apt install certbot python3-certbot-nginx
+  sudo certbot --nginx -d <domain>
+```
