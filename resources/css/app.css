@@ -460,6 +460,10 @@ form.email-address > button {
   padding-top: 3%;
 }
 
+.sale {
+  color: #C1272D;
+}
+
 /**
  * List of trending section css.
  */

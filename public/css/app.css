@@ -565,6 +565,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.line-through {
+  text-decoration-line: line-through;
+}
 
 /**
  * List of navigation section css.
@@ -1019,6 +1022,10 @@ form.email-address > button {
 }
 .recently-bought-gallery > div > p {
   padding-top: 3%;
+}
+
+.sale {
+  color: #C1272D;
 }
 
 /**
