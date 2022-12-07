@@ -14,7 +14,7 @@
   <x-vip-exclusive />
 
   {{-- TRENDING SECTION --}}
-
+  <x-trending />
 
   {{-- NEW IN SECTION --}}
 
