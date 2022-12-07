@@ -13,7 +13,8 @@ $info = [
   array('title' => "About THREADED"),
   array('title' => "Affiliate"),
   array('title' => "Blog"),
-  array('title' => "Careers")
+  array('title' => "Careers"),
+  array('title' => "")
 ];
 
 $support = [
@@ -26,7 +27,10 @@ $support = [
 
 $care = [
   array('title' => "Contact Us"),
-  array('title' => "Payment Methods")
+  array('title' => "Payment Methods"),
+  array('title' => ""),
+  array('title' => ""),
+  array('title' => "")
 ];
 
 @endphp

@@ -387,6 +387,11 @@ form.email-address > button {
   padding: 3%;
 }
 
+.payment-ico {
+  width: 37.5px;
+  height: 25px;
+}
+
 /** 
  * List of insta section css.
  */

@@ -24,12 +24,27 @@
       @endforeach
     </div>
 
-    <div class="not-italic text-xs grid grid-cols-1 justify-start col-span-2">
-      <div class="flex">
+    <div class="not-italic flex flex-row text-xs grid grid-cols-1 justify-start">
+      <div class="flex flex-row grid grid-cols-1 justify-start">
         <p class="uppercase font-semibold flex">Follow Us</p>
+	<div class="flex flex-row">
+	  <i class="pr-3 fa-brands fa-facebook-f"></i>
+          <i class="pr-3 fa-brands fa-instagram"></i>
+          <i class="pr-3 fa-brands fa-twitter"></i>
+          <i class="pr-3 fa-brands fa-youtube"></i>
+          <i class="pr-3 fa-brands fa-pinterest-p"></i>
+          <i class="pr-3 fa-brands fa-tiktok"></i>
+	</div>
       </div>
-      <div class="flex">
+      <div class="flex flex-row grid grid-cols-1 justify-start">
         <p class="uppercase font-semibold flex">We Accept</p>
+        <div class="flex flex-row">
+	  <img class="payment-ico pr-3" alt="Payment 1" src="{{ asset('/images/payment1.png') }}" />
+          <img class="payment-ico pr-3" alt="Payment 2" src="{{ asset('/images/payment2.png') }}" />
+          <img class="payment-ico pr-3" alt="Payment 3" src="{{ asset('/images/payment3.png') }}" />
+          <img class="payment-ico pr-3" alt="Payment 4" src="{{ asset('/images/payment4.png') }}" />
+          <img class="payment-ico pr-3" alt="Payment 5" src="{{ asset('/images/payment5.png') }}" />
+        </div>
       </div>
     </div>
   </div>

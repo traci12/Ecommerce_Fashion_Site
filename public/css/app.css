@@ -504,6 +504,9 @@ video {
 .pt-3 {
   padding-top: 0.75rem;
 }
+.pr-3 {
+  padding-right: 0.75rem;
+}
 .text-center {
   text-align: center;
 }
@@ -934,6 +937,11 @@ form.email-address > button {
 }
 .copyright {
   padding: 3%;
+}
+
+.payment-ico {
+  width: 37.5px;
+  height: 25px;
 }
 
 /** 
