@@ -421,6 +421,9 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -439,8 +442,14 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
+}
+.content-center {
+  align-content: center;
 }
 .items-start {
   align-items: flex-start;
@@ -448,8 +457,14 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-3 {
+  gap: 0.75rem;
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -802,6 +817,33 @@ video {
   padding-bottom: 15%;
 }
 .site-wide-deals-rect > div > button { 
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+/**
+ * List of vip exclusive section css.
+ */
+
+/* VIP exclusive */
+.vip-exclusive-rect {
+  width: 100%;
+  height: 75px;
+  top: 920px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+/* black friday exclusive */
+.exclusive-header {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+/* Button 3 */
+.vip-exclusive-rect > div.shop-now > button {
   width: auto;
   height: auto;
   padding: 10px 20px;

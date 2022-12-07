@@ -307,3 +307,30 @@
   padding: 10px 20px;
   gap: 15px;
 }
+
+/**
+ * List of vip exclusive section css.
+ */
+
+/* VIP exclusive */
+.vip-exclusive-rect {
+  width: 100%;
+  height: 75px;
+  top: 920px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+/* black friday exclusive */
+.exclusive-header {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+/* Button 3 */
+.vip-exclusive-rect > div.shop-now > button {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  gap: 15px;
+}

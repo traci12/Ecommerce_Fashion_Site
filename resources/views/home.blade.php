@@ -1,32 +1,33 @@
+{{-- MAIN LAYOUT --}}
 <x-layout>
 
-{{-- BENEFITS SECTION --}}
-<x-benefits />
+  {{-- BENEFITS SECTION --}}
+  <x-benefits />
 
-{{-- HERO SECTION --}}
-<x-hero />
+  {{-- HERO SECTION --}}
+  <x-hero />
 
-{{-- SITE-WIDE DEALS SECTION --}}
-<x-site-wide-deals />
+  {{-- SITE-WIDE DEALS SECTION --}}
+  <x-site-wide-deals />
 
-{{-- VIP EXCLUSIVE SECTION --}}
+  {{-- VIP EXCLUSIVE SECTION --}}
+  <x-vip-exclusive />
 
-
-{{-- TRENDING SECTION --}}
-
-
-{{-- NEW IN SECTION --}}
+  {{-- TRENDING SECTION --}}
 
 
-{{-- RECENTLY BOUGHT SECTION --}}
+  {{-- NEW IN SECTION --}}
 
 
-{{-- INSTA SECTION --}}
+  {{-- RECENTLY BOUGHT SECTION --}}
 
 
-{{-- NEWSLETTER SECTION --}}
+  {{-- INSTA SECTION --}}
 
 
-{{-- FOOTER SECTION --}}
+  {{-- NEWSLETTER SECTION --}}
+
+
+  {{-- FOOTER SECTION --}}
 
 </x-layout>
