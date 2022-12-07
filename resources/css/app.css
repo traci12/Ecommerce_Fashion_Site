@@ -172,3 +172,15 @@
   top: 70px;
   background: #F2F2F2;
 }
+
+/* Auto layout */
+.benefits {
+  height: 30px;
+  /* top: 80px; */
+  padding: 6%;  
+}
+
+.benefits > i {
+  width: 30px;
+  height: 30px;
+}
