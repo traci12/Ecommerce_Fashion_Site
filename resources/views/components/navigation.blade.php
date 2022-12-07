@@ -16,7 +16,7 @@
 <div class="right-nav absolute">
   <a class="currency absolute" href="#">
     <div class="currency-rect absolute bg-white box-border"></div>
-    <img class="us-flag absolute" src="{{ asset('/images/US-Flag.png') }}" />
+    <img class="us-flag absolute" alt="US-Flag" src="{{ asset('/images/US-Flag.png') }}" />
     <span class="absolute not-italic font-normal text-sm">USD $</span>
     <i class="fa-solid fa-caret-down absolute"></i>
   </a>
@@ -37,7 +37,7 @@
 
 {{-- Logo --}}
 <div class="logo absolute">
-  <img class="logo-img absolute" src="{{ asset('/images/Logo.png') }}" />
+  <img class="logo-img absolute" alt="THREADED" src="{{ asset('/images/Logo.png') }}" />
 </div>
 
 </div>

@@ -1,7 +1,7 @@
 <x-layout>
 
 {{-- BENEFITS SECTION --}}
-
+<x-benefits />
 
 {{-- HERO SECTION --}}
 
