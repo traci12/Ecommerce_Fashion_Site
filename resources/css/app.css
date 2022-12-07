@@ -372,3 +372,17 @@ form.email-address > button {
   width: 35px;
   height: 35px;
 }
+
+/**
+ * List of footer section css.
+ */
+
+/* Footer Nav */
+.footer-rect {
+  width: 100%;
+  height: 75px;
+  top: 3640px;
+}
+.copyright {
+  padding: 3%;
+}

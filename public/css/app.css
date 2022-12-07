@@ -439,6 +439,12 @@ video {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -460,6 +466,12 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
 .justify-center {
   justify-content: center;
 }
@@ -479,6 +491,9 @@ video {
 }
 .p-0 {
   padding: 0px;
+}
+.pt-3 {
+  padding-top: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -892,5 +907,19 @@ form.email-address > input {
 form.email-address > button {
   width: 35px;
   height: 35px;
+}
+
+/**
+ * List of footer section css.
+ */
+
+/* Footer Nav */
+.footer-rect {
+  width: 100%;
+  height: 75px;
+  top: 3640px;
+}
+.copyright {
+  padding: 3%;
 }
 

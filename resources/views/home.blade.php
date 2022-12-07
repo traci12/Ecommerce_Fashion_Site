@@ -29,5 +29,6 @@
   <x-newsletter />
 
   {{-- FOOTER SECTION --}}
+  <x-footer />
 
 </x-layout>
