@@ -1,8 +1,5 @@
 <x-layout>
 
-{{-- NAVIGATION SECTION --}}
-
-
 {{-- BENEFITS SECTION --}}
 
 

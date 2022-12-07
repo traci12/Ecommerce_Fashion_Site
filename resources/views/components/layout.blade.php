@@ -1,3 +1,16 @@
+@php
+/**
+ * The template for layout component.
+ *
+ * This is the main layout of the ecommerce fashion site. The $slot blade component
+ * will render addition contents inside the layout component.
+ *
+ * @package Laravel
+ * @author Tristan Jake Alcantara
+ * @since 2022
+ */
+@endphp
+
 <!doctype html>
 <html>
 <head>
@@ -6,6 +19,11 @@
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
+
+  {{-- NAVIGATION SECTION --}}
+  <x-navigation />
+
+  {{-- Include $slot component for addition contents. --}}
   {{ $slot }}
 </body>
 </html>
