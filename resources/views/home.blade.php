@@ -20,7 +20,7 @@
 
 
   {{-- RECENTLY BOUGHT SECTION --}}
-
+  <x-recently-bought />
 
   {{-- INSTA SECTION --}}
   <x-insta />

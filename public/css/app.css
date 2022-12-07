@@ -457,6 +457,9 @@ video {
 .flex-row {
   flex-direction: row;
 }
+.flex-col {
+  flex-direction: column;
+}
 .content-center {
   align-content: center;
 }
@@ -957,5 +960,36 @@ form.email-address > button {
   height: auto;
   padding: 10px 20px;
   gap: 15px;
+}
+
+/**
+ * List of recently bought css.
+ */
+
+/* Recently bought */
+.recently-bought-rect {
+  top: 2435px;
+  height: 580px;
+  width: 100%;
+}
+
+/* heading */
+.recently-bought-rect > h1, .recently-bought-gallery {
+  padding-top: 3%;
+}
+
+/* Rectangle 10 */
+.recently-bought-gallery > img {
+  width: 225px;
+  height: 225px;
+}
+
+/* item-sale */
+.recently-bought-gallery > div {
+  padding: 20px;
+  width: 265px;
+}
+.recently-bought-gallery > div > p {
+  padding-top: 3%;
 }
 
