@@ -7,7 +7,7 @@
 <x-hero />
 
 {{-- SITE-WIDE DEALS SECTION --}}
-
+<x-site-wide-deals />
 
 {{-- VIP EXCLUSIVE SECTION --}}
 
