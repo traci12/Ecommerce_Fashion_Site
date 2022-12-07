@@ -1,3 +1,5 @@
+[![Product Name Screen Shot][product-screenshot]](https://myproject123.tk)
+
 ## Introduction
 
 This is a complete project implementation of ecommerce fashion website figma mockup/wireframe. The website is created using the PHP Laravel Framework + Tailwind CSS. The site contain the following features:
@@ -128,3 +130,5 @@ Reload web server.
   sudo apt install certbot python3-certbot-nginx
   sudo certbot --nginx -d <domain>
 ```
+
+[product-screenshot]: https://github.com/traci12/Ecommerce_Fashion_Site/blob/main/public/images/screenshot.png
