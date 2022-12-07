@@ -507,6 +507,15 @@ video {
 .pr-3 {
   padding-right: 0.75rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1045,5 +1054,41 @@ form.email-address > button {
   padding: 10px 20px;
   gap: 10px;
   margin: 1%;
+}
+
+/**
+ * List of new in section css.
+ */
+
+/* New In */
+.new-in-rect, .new-in-rect > img {
+  top: 2035px;
+  height: 400px;
+  width: 100%  
+}
+
+/* Button 3 */
+.new-in-btn {
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+/* new arrivals container */
+.new-in-container {
+  top: 5%;
+  left: 75%;
+  transform: translate(-75%, -0%);
+}
+
+/* Get ready for the holidays with us! */
+.new-in-header {
+  font-size: 86px;
+  line-height: 86px;
+}
+
+/* new arrivals */
+.new-in-par {
+  font-size: 28px;
+  line-height: 34px;
 }
 

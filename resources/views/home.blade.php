@@ -17,7 +17,7 @@
   <x-trending />
 
   {{-- NEW IN SECTION --}}
-
+  <x-new-in />
 
   {{-- RECENTLY BOUGHT SECTION --}}
   <x-recently-bought />
