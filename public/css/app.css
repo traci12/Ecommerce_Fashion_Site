@@ -433,6 +433,9 @@ video {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
@@ -452,9 +455,16 @@ video {
 .p-0 {
   padding: 0px;
 }
+.text-center {
+  text-align: center;
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -462,6 +472,9 @@ video {
 }
 .font-normal {
   font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
@@ -472,6 +485,10 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /**
@@ -648,9 +665,86 @@ video {
   /* top: 80px; */
   padding: 6%;  
 }
-
 .benefits > i {
   width: 30px;
   height: 30px;
+}
+
+/**
+ * List of hero section css.
+ */
+
+/* Hero */
+.hero-rect {
+  width: 100%;
+  top: 120px;
+}
+
+/* hero-slider */
+.hero-slider {
+  background: #EDE9DD;
+  mix-blend-mode: normal;
+  height: 650px;
+}
+
+/* Mask Group */
+.maskgroup-right {
+  mix-blend-mode: overlay;
+}
+
+/* hero 1 */
+.hero-opening {
+  width: 644px;
+  height: 446px;
+  left: 71%;
+  transform: translate(-50%, -0%);
+  /* top: 155px; */
+  top: 50px;
+}
+
+/* Button 4 */
+.hero-btn {
+  padding: 15px 30px;
+  gap: 15px;
+  height: 74px;
+  left: 75%;
+  transform: translate(-75%, -0%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 75px;
+}
+
+/* slider bullets */
+.slider-bullets {
+  width: 50px;
+  height: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 35px;
+}
+.slider-bullets > i {
+  padding-left: 10%;
+  color: rgba(255, 255, 255, 0.5);
+}
+.slider-bullets > .active {
+  color: #FFFFFF;
+}
+
+/* slider arrows */
+.slider-arrows {
+  width: 100%;
+  height: 50px;
+  top: 50%;
+}
+
+/* ant-design:left-outlined */
+.arrow-left {
+  transform: translate(-50%, -50%);
+  left: 2.5%;
+}
+
+/* ant-design:right-outlined */
+.arrow-right {
+  transform: translate(-50%, -50%);
+  right: 2.5%;
 }
 

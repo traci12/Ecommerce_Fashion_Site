@@ -4,7 +4,7 @@
 <x-benefits />
 
 {{-- HERO SECTION --}}
-
+<x-hero />
 
 {{-- SITE-WIDE DEALS SECTION --}}
 
