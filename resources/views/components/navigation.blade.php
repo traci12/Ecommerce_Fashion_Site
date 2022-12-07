@@ -10,7 +10,7 @@
  */
 @endphp
 
-<div class="rectangle absolute left-0 right-0 bg-white">
+<div class="rectangle fixed left-0 right-0 bg-white">
 
 {{-- Right Nav --}}
 <div class="right-nav absolute">
