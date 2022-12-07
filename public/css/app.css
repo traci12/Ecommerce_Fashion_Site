@@ -442,6 +442,9 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -507,6 +510,9 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .not-italic {
   font-style: normal;
@@ -848,5 +854,43 @@ video {
   height: auto;
   padding: 10px 20px;
   gap: 15px;
+}
+
+/**
+ * List of newsletter section css.
+ */
+
+/* Newsletter */
+.newsletter-rect {
+  width: 100%;
+  height: 75px;
+  top: 3565px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+/* sign up for exclusive deals and updates */
+.newsletter-header {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+/* your email address */
+form.email-address {
+  color: #4D4D4D;
+}
+
+/* Rectangle 15 */
+form.email-address > input {
+  width: 354px;
+  height: 35px;
+  padding: 2%;
+  background: #F2F2F2;
+}
+
+/* form */
+form.email-address > button {
+  width: 35px;
+  height: 35px;
 }
 

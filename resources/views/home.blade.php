@@ -26,7 +26,7 @@
 
 
   {{-- NEWSLETTER SECTION --}}
-
+  <x-newsletter />
 
   {{-- FOOTER SECTION --}}
 
